@@ -1,0 +1,27 @@
+
+
+
+@import "../../global.scss";
+
+
+.login{
+
+    @include mobile{
+    width: 100%;
+    }
+    .loginform{
+@include mobile {
+        width: 90%;
+    }
+    input{
+        @include mobile{
+            width: 90%;
+        }
+    }
+    label{
+        @include mobile{
+            display: none;
+        }
+    }
+    }
+}

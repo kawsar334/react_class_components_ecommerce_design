@@ -1,0 +1,44 @@
+@import "../../global.scss";
+
+
+.product_cart {
+
+    @include mobile {
+        width: 100% !important;
+        border-radius: 10px !important;
+        overflow: hidden;
+        position: relative;
+       
+    }
+
+    .carttop {
+        transition: all 0.5s ease !important;
+
+        &:hover {
+            .cartanim {
+                transition: all 1s ease !important;
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        .cartanim {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+        visibility: hidden;
+        opacity: 0;
+            transition: opacity 1s ease;
+            .cart_link{
+            transition: all 2s ease !important;
+
+                @include mobile{
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+}

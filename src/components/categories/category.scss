@@ -1,0 +1,52 @@
+@import "../../global.scss";
+
+
+.category {
+    width: 100%;
+    height: max-content;
+
+    .cat_wrapper {
+        margin: 0 auto;
+        width: 90%;
+        // display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        // grid-template-rows: repeat(1, 300px);
+        // height: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        @include mobile {
+            // grid-template-columns: repeat(1, 1fr);
+            // grid-template-rows: repeat(6 6fr);
+            // width: 90%;
+        }
+
+        .cat_item {
+            cursor: pointer;
+            width:28%;
+            background-color: white;
+            height: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            @include mobile{
+                width: 100%;
+                // height:  ;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// .toys {
+//     grid-column-start: span 4;
+
+//     @include mobile {
+//         grid-column-start: span 1;
+//     }
+// }

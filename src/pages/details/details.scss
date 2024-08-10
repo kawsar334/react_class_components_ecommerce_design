@@ -1,0 +1,30 @@
+
+
+@import "../../global.scss";
+
+
+
+.details{
+    @include mobile{
+        height: max-content;
+    }
+    .detailswrapper{
+        @include mobile{
+            flex-direction: column;
+            height: max-content;
+            width: 90%;
+        }
+        .detailsleft{
+            @include mobile{
+
+                width: 100%;
+            }
+        }
+        .detailsright{
+            @include mobile{
+
+                width: 100%;
+            }
+        }
+    }
+}

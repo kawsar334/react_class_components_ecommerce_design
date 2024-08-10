@@ -1,0 +1,17 @@
+
+
+@import "../../global.scss";
+
+.cart_container{
+    @include mobile{
+        width: 90%;
+        // background-color: red;
+    }
+
+
+}
+.product_header{
+    @include mobile{
+        font-size: 30px;
+    }
+}

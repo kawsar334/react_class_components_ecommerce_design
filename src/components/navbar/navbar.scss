@@ -1,0 +1,85 @@
+@import "../../global.scss";
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+
+
+    @include mobile {
+        position: relative;
+    }
+
+    .logo {}
+
+    .navlists {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+
+        @include mobile {
+            width: 80%;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            position: absolute;
+            top: 80px;
+            border: 1px solid lightgray;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px lightgray;
+            background-color: white;
+        }
+    }
+
+    .navright {
+
+
+        @include mobile {
+            gap: 10px;
+        }
+
+        li {
+
+            @include mobile {
+                i {
+                    font-size: 20px;
+
+                }
+            }
+
+
+        }
+    }
+
+    .menu_icons {
+
+        .menu_btn {
+            display: none;
+
+            @include mobile {
+                display: flex;
+            }
+        }
+    }
+}
+
+.searchbar {
+    @include mobile {
+        width: 400px !important;
+        right: -120px !important;
+
+    }
+}
+
+.menu_btn {
+    display: none;
+
+    @include mobile {
+        display: flex;
+    }
+}

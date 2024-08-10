@@ -1,0 +1,29 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+$maincolor:rgb(23, 10, 54);
+$maincolor: black;
+$rgb:rgb(0,0,0,0.3);
+
+$white:white;
+
+
+
+
+.app{
+    // background-color: white;
+    // color: rgb(48, 46, 46);  
+    // background-color: black;
+    // color: lightgray;  
+   
+}
+
+@mixin mobile{
+    @media (max-width:#{778px}) {
+        @content
+    }
+}

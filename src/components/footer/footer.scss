@@ -1,0 +1,50 @@
+@import "../../global.scss";
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #f0e0ff;
+    padding: 50px 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+
+    @include mobile {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+        // background-color: red;
+    }
+
+    .footeritems {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 30px;
+
+            @include mobile {
+                border-bottom: 1px solid lightgray;
+            }
+        }
+
+        ul {
+            li {
+                margin-top: 10px;
+            }
+        }
+
+        @include mobile {
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 30px;
+            gap: 10px;
+        }
+
+
+    }
+}
